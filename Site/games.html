@@ -56,3 +56,36 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
 </body>
 </html>
+
+<meta charset="UTF-8">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+  <style>
+    /* Add custom styles for the back button */
+    #back-btn {
+      position: fixed;
+      top: 1em;
+      left: 1em;
+    }
+  </style>
+</head>
+<body>
+  <div class="ui container">
+    <!-- Back Button -->
+    <button id="back-btn" class="ui icon button">
+      <i class="arrow left icon"></i>
+    </button>
+
+    
+  </div>
+
+  <!-- Load Semantic UI JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+  <script>
+    // Add event listener for the back button
+    document.getElementById('back-btn').addEventListener('click', function() {
+      window.history.back();
+    });
+  </script>
+</body>
+</html>
