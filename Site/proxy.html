@@ -1,28 +1,25 @@
+<!DOCTYPE html>
 <html>
+  <head>
+    <title>Centered iFrame with No Border</title>
+    <style>
+      /* Centering the iFrame */
+      #centered-iframe-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
 
-<head>
-    <title>Title of the document</title>
-</head>
-
-<body>
-    
-</body>
-
-</html>
-<div style="text-align:center;">
-    <iframe src="https://e.widgetbot.io/channels/938658733788131399/1062403547859263578" width="800"
-        height="600"></iframe>
-<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
-  <style>
-    body {
-      background-color: #1B1C1D;
-      color: white;
-    }
-  </style>
-</head>
-<body>
-  <div class="ui container">
-   
-  </div>
-</body>
+      /* Removing the iFrame border */
+      iframe {
+        border: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="centered-iframe-container">
+      <iframe src="https://e.widgetbot.io/channels/938658733788131399/1062403547859263578" width="800" height="600"></iframe>
+    </div>
+  </body>
 </html>
