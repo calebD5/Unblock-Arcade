@@ -1,25 +1,29 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Centered iFrame with No Border</title>
-    <style>
-      /* Centering the iFrame */
-      #centered-iframe-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-      }
-
-      /* Removing the iFrame border */
-      iframe {
-        border: none;
-      }
-    </style>
-  </head>
-  <body>
-    <div id="centered-iframe-container">
-      <iframe src="https://e.widgetbot.io/channels/938658733788131399/1062403547859263578" width="800" height="600"></iframe>
-    </div>
-  </body>
+<head>
+	<title>Embedding Site</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+	<style>
+		body {
+			background-color: #1b1c1d !important;
+		}
+		.ui.segment {
+			background-color: #2f3136 !important;
+			color: #fff !important;
+		}
+		.ui.secondary.pointing.menu .item {
+			color: #fff !important;
+		}
+	</style>
+</head>
+<body>
+	<div class="ui container">
+		<div class="ui segment">
+			<a class="ui primary button" href="javascript:history.back()">Back</a>
+			<iframe src="https://e.widgetbot.io/channels/938658733788131399/1062403547859263578" width="100%" height="600" frameborder="0" allowfullscreen></iframe>
+		</div>
+	</div>
+	<script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script defer src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+</body>
 </html>
